@@ -28,7 +28,7 @@ public class FileFunction
 				String[] tokenize = fileRead.split(",");
 				
 				// assume file is made correctly
-				// and make temporary variables for the three types of data
+				// and make temporary variables for the three fields
 				String title=tokenize[0];
 				//System.out.println(title);
 
@@ -38,7 +38,7 @@ public class FileFunction
 				int yearPublished = Integer.parseInt(tokenize[2]);
 				//System.out.println(yearPublished);
 
-				// create temporary instance of Inventory object
+				// create temporary instance of Book object
 				// and load with three data values
 				 Book b = new Book(title,author, yearPublished);
 				 
